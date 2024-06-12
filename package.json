@@ -1,13 +1,12 @@
 {
   "name": "backend_redsocial",
   "version": "1.0.0",
-  "description": "API REST con starck MERN y AUTENTICACIÓN JWT para una red social.",
+  "description": "API REST con stack MERN y AUTENTICACIÓN JWT para una red social.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:watch": "node --watch index.js",
-    "start:": "nodemon index.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon --watch index.js",
+    "start": "node index.js"
   },
   "author": "Oscar Javier López Gómez",
   "license": "ISC",
