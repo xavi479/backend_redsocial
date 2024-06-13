@@ -1,15 +1,3 @@
-/*//Importacion
-const connection = require("./database/connection");
-
-//mensaje de bienvenida
-console.log("API NODE arriba");
-
-//conexion a la DB
-
-connection ()*/
-
-
-
 // Importaciones
 const connection = require('./database/connection');
 const express = require("express");
