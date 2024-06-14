@@ -1,7 +1,10 @@
 // Importaciones
-const connection = require('./database/connection');
-const express = require("express");
-const cors = require("cors");
+import connection from './database/connection.js';
+import express, { json, urlencoded } from "express";
+import cors from "cors";
+import UserRoutes from './routes/user.js'
+import PublicationsRoutes from './routes/publications.js'
+import FollowRoutes from './routes/follow.js'
 
 // Mensaje de bienvenida
 console.log("API NODE arriba");
@@ -21,6 +24,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Configurar rutas
+app.use('/api/user', UserRoutes);
+app.use('/api/publications', PublicationsRoutes);
+app.use('/api/follow', FollowRoutes);
+
 app.get('/test-router', (req, res) => {
   return res.status(200).json(
     {

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "API REST con stack MERN y AUTENTICACIÓN JWT para una red social.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
@@ -11,7 +12,11 @@
   "author": "Oscar Javier López Gómez",
   "license": "ISC",
   "dependencies": {
-    "bcrypt-nodejs": "^0.0.3",
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "jwt-simple": "^0.5.6",
